@@ -1,0 +1,235 @@
+/* Universal Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light background for a clean look */
+    color: #333; /* Default text color */
+}
+
+a {
+    text-decoration: none;
+    color: #5a67d8; /* Theme color for links */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #434190; /* Darker shade on hover */
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #5a67d8;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+    background-color: #434190;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Forms */
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control input,
+.form-control select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control input:focus,
+.form-control select:focus {
+    border-color: #5a67d8;
+    box-shadow: 0 0 5px rgba(90, 103, 216, 0.5);
+    outline: none;
+}
+
+/* Pages - Access Denied */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    color: #ff4d4d; /* Error red color */
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.container p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.container a {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #5a67d8;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #434190;
+}
+
+.sidebar a.active {
+    background-color: #333a96;
+    font-weight: bold;
+}
+
+.sidebar .logout-btn {
+    margin-top: auto;
+    background-color: #ff4d4d;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sidebar .logout-btn:hover {
+    background-color: #d63333;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f4f4f9;
+}
+
+.main-content h1 {
+    font-size: 2.5em;
+    color: #5a67d8;
+    margin-bottom: 20px;
+}
+
+.main-content .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.main-content .card h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Login and Register Pages */
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.auth-container h2 {
+    color: #5a67d8;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.auth-container p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.auth-container a {
+    display: block;
+    margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    form {
+        max-width: 100%;
+        padding: 15px;
+    }
+}

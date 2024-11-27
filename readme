@@ -1,0 +1,19 @@
+rbac/
+├── assets/
+│   └── style.css
+├── db/
+│   └── connection.php
+├── includes/
+│   ├── header.php
+│   ├── footer.php
+│   └── auth.php
+├── views/
+│   ├── login.php
+│   ├── register.php
+│   ├── dashboard.php
+│   └── access_denied.php
+├── index.php
+├── login.php
+├── register.php
+├── logout.php
+└── rbac.php
